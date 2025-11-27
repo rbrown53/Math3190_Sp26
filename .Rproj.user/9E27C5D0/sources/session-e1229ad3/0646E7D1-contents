@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
   # resources:
   #   - Lab 4 - R Shiny/Lab 4 - R Shiny.qmd
 
@@ -19,8 +20,8 @@ website:
           text: Lab 3
         - href: Lab 4 - R Shiny/Lab 4 - R Shiny.qmd
           text: Lab 4
-        # - href: Lab 4 - R Shiny/Lab 4 - R Shiny App.qmd
-        #   text: Lab 4 App
+        - href: Lab 4 - R Shiny/Lab 4 - R Shiny App.qmd
+          text: Lab 4 App
       - section: "Homework"
       - section: "Notes"
         contents:
