@@ -1,0 +1,32 @@
+{
+    "id": "4831E706",
+    "path": "~/Library/CloudStorage/OneDrive-SouthernUtahUniversity/Math 3190 - Fundamentals of Data Science/Spring 2026/Notes/Notes 3 - Quarto (Not Done)/mywebsite/Lab 4 - R Shiny/Lab 4 - R Shiny.qmd",
+    "project_path": "Lab 4 - R Shiny/Lab 4 - R Shiny.qmd",
+    "type": "quarto_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1764273526389.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "rmdVisualMode": "true",
+        "rmdVisualWrapConfigured": "true",
+        "chunk_output_type": "console",
+        "source_window_id": "",
+        "Source": "Source",
+        "docOutlineVisible": "1",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "124:0",
+        "cursorPosition": "3,12",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1764269347,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1764269347,
+    "read_only": false,
+    "read_only_alternatives": []
+}

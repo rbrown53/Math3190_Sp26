@@ -1,0 +1,103 @@
+"0","library(tidyverse)"
+"0","library(shiny)"
+"0","ui <- fluidPage("
+"0","  "
+"0","  # Put a titlePanel here"
+"0","  titlePanel(""k-means clustering""),"
+"0","  "
+"0","  sidebarLayout("
+"0","    # Sidebar. Put your inputs inside the sidebarPanel"
+"0","    sidebarPanel("
+"0","      selectInput('xcol', 'X Variable', names(iris)),"
+"0","      selectInput('ycol', 'Y Variable', names(iris),"
+"0","                  selected=names(iris)[[2]]),"
+"0","      numericInput('clusters', 'Cluster count', 3,"
+"0","                   min = 1, max = 9)"
+"0","    ),"
+"0","    "
+"0","    # Main panel. put your output plot here"
+"0","    mainPanel("
+"0","      plotOutput('plot1')"
+"0","    )"
+"0","  )"
+"0",")"
+"0",""
+"0","server <- function(input, output, session) {"
+"0","  "
+"0","  selectedData <- reactive({"
+"0","    iris[, c(input$xcol, input$ycol)]"
+"0","  })"
+"0","  "
+"0","  clusters <- reactive({"
+"0","    kmeans(selectedData(), input$clusters)"
+"0","  })"
+"0","  "
+"0","  output$plot1 <- renderPlot({"
+"0","    palette(c(""#E41A1C"", ""#377EB8"", ""#4DAF4A"", ""#984EA3"","
+"0","              ""#FF7F00"", ""#FFFF33"", ""#A65628"", ""#F781BF"", ""#999999""))"
+"0","    "
+"0","    par(mar = c(5.1, 4.1, 0, 1))"
+"0","    plot(selectedData(),"
+"0","         col = clusters()$cluster,"
+"0","         pch = 20, cex = 3)"
+"0","    points(clusters()$centers, pch = 4, cex = 4, lwd = 4)"
+"0","  })"
+"0","}"
+"0",""
+"0","shinyApp(ui = ui, server = server)"
+"2","  210: [37mdo_one[39m
+"
+"2",""
+"2","  209: [37mkmeans[39m
+"
+"2",""
+"2","  208: [34m[1m<reactive:clusters> [#8][22m[39m
+"
+"2",""
+"2","  206: [37m.func[39m
+"
+"2",""
+"2","  203: [37mcontextFunc[39m
+"
+"2",""
+"2","  202: [37menv$runWith[39m
+"
+"2",""
+"2","  191: [37mctx$run[39m
+"
+"2",""
+"2","  190: [37mself$.updateValue[39m
+"
+"2",""
+"2","  188: [37mclusters[39m
+"
+"2",""
+"2","  178: [34m[1mrenderPlot [#16][22m[39m
+"
+"2",""
+"2","  176: [37mfunc[39m
+"
+"2",""
+"2","  136: [37mdrawPlot[39m
+"
+"2",""
+"2","  122: [37m<reactive:plotObj>[39m
+"
+"2",""
+"2","  102: [37mdrawReactive[39m
+"
+"2",""
+"2","   89: [37mrenderFunc[39m
+"
+"2",""
+"2","   88: [37moutput$plot1[39m
+"
+"2",""
+"2","    3: [37mrunApp[39m
+"
+"2",""
+"2","    2: [37mprint.shiny.appobj[39m
+"
+"2",""
+"2","    1: [37m<Anonymous>[39m
+"

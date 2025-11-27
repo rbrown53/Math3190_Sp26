@@ -1,0 +1,11 @@
+---
+title: "Math 3190 Website - Rick Brown"
+---
+
+This is a website that will compile all assignments I do for Math 3190 - Fundamentals of Data Science at Southern Utah University in Spring 2026.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{r}
+1 + 1
+```
